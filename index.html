@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Menu Kue</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="menu-container">
         <h1>Daftar Menu Kue</h1>
 
-        <div class="menu-item">
+        <div class="menu-item" data-product="Kue Black Forest">
             <img src="image/black-forest.jpg" alt="Kue Black Forest" class="menu-image">
             <h2>Kue Black Forest</h2>
             <form>
@@ -22,11 +24,27 @@
                     <option value="24">Ukuran 24 cm - Rp 190.000</option>
                 </select>
                 <p>*Harga belum termasuk ongkir</p>
-                <button type="submit" class="order-btn">Order Sekarang</button>
+                <button type="button" class="orderNowBtn order-btn">Order Sekarang</button>
             </form>
+            <div class="order-form" style="display: none;">
+                <h2>Form Pemesanan Kue Black Forest</h2>
+                <label for="name-black-forest">Nama:</label>
+                <input type="text" id="name-black-forest" required>
+        
+                <label for="address-black-forest">Alamat:</label>
+                <input type="text" id="address-black-forest" required>
+        
+                <label for="phone-black-forest">No Handphone:</label>
+                <input type="text" id="phone-black-forest" required>
+        
+                <label for="email-black-forest">Email:</label>
+                <input type="email" id="email-black-forest" required>
+        
+                <button class="submitOrderBtn order-btn">Kirim Pesanan</button>
+            </div>
         </div>
-
-        <div class="menu-item">
+        
+        <div class="menu-item" data-product="Kue Berkarakter">
             <img src="image/kue-berkarakter.jpg" alt="Kue Berkarakter" class="menu-image">
             <h2>Kue Berkarakter</h2>
             <form>
@@ -38,9 +56,28 @@
                     <option value="24">Ukuran 24 cm - Rp 190.000</option>
                 </select>
                 <p>*Harga belum termasuk ongkir</p>
-                <button type="submit" class="order-btn">Order Sekarang</button>
+                <button type="button" class="orderNowBtn order-btn">Order Sekarang</button>
             </form>
+            <div class="order-form" style="display: none;">
+                <h2>Form Pemesanan Kue Berkarakter</h2>
+                <label for="name-character-cake">Nama:</label>
+                <input type="text" id="name-character-cake" required>
+        
+                <label for="address-character-cake">Alamat:</label>
+                <input type="text" id="address-character-cake" required>
+        
+                <label for="phone-character-cake">No Handphone:</label>
+                <input type="text" id="phone-character-cake" required>
+        
+                <label for="email-character-cake">Email:</label>
+                <input type="email" id="email-character-cake" required>
+        
+                <button class="submitOrderBtn order-btn">Kirim Pesanan</button>
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
